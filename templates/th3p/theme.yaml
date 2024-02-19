@@ -1,0 +1,6 @@
+# My Theme Configuration File
+
+name: "th3p"
+author: "aladdin"
+config:
+  parent: twenty-one

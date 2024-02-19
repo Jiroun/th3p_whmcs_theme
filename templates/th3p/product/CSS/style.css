@@ -1,0 +1,255 @@
+/* Start Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    line-height: 1.8;
+}
+/* End Rules */
+/* Start page */
+.product-page {
+    background-color: #F1F1F1;
+}
+h1 {
+    margin: 0 !important;
+    padding: 15px;
+    text-align: center;
+}
+.cont {
+    margin: 0 55px;
+}
+.flex {
+    display: flex;
+}
+.flex .box {
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+    background: rgb(206,208,208);
+    background: linear-gradient(0deg, rgba(206,208,208,1) 0%, rgba(132,242,242,1) 100%);
+    width: 320px;
+    padding: 20px 5px;
+    text-align: center;
+}
+.flex .box h3 {
+    color: #007C99;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+.flex .box img {
+    height: 110px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(2px 2px 5px #222);
+}
+.flex .box p {
+    color: #16435E;
+    font-weight: 600;
+    font-size: 0.80rem;
+}
+.flex .box p span {
+    color: #037BAF;
+}
+.flex .text {
+    margin-right: 50px;
+}
+.flex .text p {
+    line-height: 2.5;
+    font-weight: 600;
+}
+.flex .text p span {
+    color: #0282AF;
+}
+.payment-methods {
+    margin-top: 40px;
+}
+
+.payment-methods h3,
+h4 {
+    display: inline-block;
+}
+.payment-methods img {
+    height: 20px;
+    margin-right: 5px;
+}
+.payment-methods div {
+    padding: 5px 0;
+}
+.zain {
+    height: 30px !important;
+}
+
+.buy-now {
+    padding: 30px 60px 45px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buy-now .box {
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    box-shadow: 5px 7px 4px 0px rgb(0 0 0 / 25%);
+    background: rgb(206,208,208);
+    background: linear-gradient(0deg, rgba(206,208,208,1) 0%, rgba(132,242,242,1) 100%);
+}
+.buy-now .box h4 {
+    color: #002C40;
+    display: block;
+}
+.buy-now .box img {
+    margin-top: 20px;
+    height: 40px;
+}
+.buy-now .box .button button {
+    color: #16435E;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #86d7ff, #5ab1c7);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    transition-duration: 0.3s;
+}
+.buy-now .box .button button:hover {
+    box-shadow: none;
+    color: white;
+}
+.buy-now .box .button button a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #16435E;
+}
+.buy-now .box .button button a i {
+    font-size: 18px;
+}
+@media (max-width: 990px) {
+    .payment-methods {
+        margin-top: 25px;
+    }
+    .payment-methods h3 {
+        font-size: 18px;
+    }
+    .payment-methods img {
+        height: 18px;
+    }
+    .flex .text p {
+        font-size: 14px;
+    }
+    .flex .box {
+        width: 420px;
+        height: 340px;
+    }
+    .flex .box h3 {
+        font-size: 16px;
+    }
+    .flex .box img {
+        height: 100px;
+    }
+    .buy-now {
+        justify-content: space-between;
+    }
+    .buy-now .box {
+        width: 30%;
+    }
+    .buy-now .box h4 {
+        font-size: 1rem !important;
+        font-weight: 600;
+        font-size: 13px;
+        font-weight: 800;
+    }
+    .buy-now .box img {
+        height: 35px;
+    }
+    .buy-now .box .button button {
+        padding: 6px 8px;
+    }
+    .buy-now .box .button button a {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 850px) {
+    .payment-methods h3 {
+        font-size: 16px;
+    }
+    .payment-methods img {
+        height: 16px;
+    }
+    .flex .box {
+        height: 320px;
+    }
+    .flex .box h3 {
+        font-size: 15px;
+    }
+    .flex .box img {
+        height: 95px;
+    }
+    .flex .box p {
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+    .zain {
+        height: 25px !important;
+    }
+}
+@media (max-width: 790px) {
+    .flex .text p {
+        font-size: 11.3px;
+        font-weight: 800;
+    }
+    .flex .text {
+        margin-right: 35px;
+    }
+}
+@media (max-width: 740px) {
+    .cont {
+        margin: 0 30px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+    .flex .box {
+        width: 480px;
+        margin: auto;
+    }
+    .flex .text {
+        margin: 30px auto;
+    }
+    .buy-now {
+        flex-wrap: wrap;
+        padding: 0px 35px 45px;
+    }
+    .flex .text p {
+        font-size: 14px;
+    }
+    .flex .box h3 {
+        font-size: 18px;
+    }
+    .flex .box img {
+        height: 100px;
+    }
+    .buy-now .box {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .flex .box p {
+        text-align: center;
+    }
+}
+
+.buy-now .box .h4 {
+   font-size: 1rem !important;
+    font-weight: 600;
+}
+    
+/* End page */

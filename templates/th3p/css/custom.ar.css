@@ -1,0 +1,224 @@
+/* noto-kufi-arabic-regular - arabic */
+
+@font-face {
+ font-family: 'DINREGULAR';
+ font-style: normal;
+ font-weight: 400;
+ src: local('din-next-regular'), url('../fonts/din-next-regular.ttf') format('truetype');
+
+}
+
+
+body {
+    font-family: 'DINREGULAR';
+
+    direction:rtl;
+    text-align: right;
+}
+
+
+/*body {*/
+/*    font-family: 'Inconsolata', monospace;*/
+/*    font-family: 'Noto Kufi Arabic', sans-serif;*/
+/*    direction:rtl;*/
+/*    text-align: right;*/
+/*}*/
+
+#order-standard_cart .products .product header .qty {
+    float: left!important;
+    direction: ltr!important;
+}
+
+
+
+/*.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off, .bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on, .bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label {*/
+/*    padding: .25rem .5rem;*/
+/*    font-size: .875rem;*/
+/*    border-radius: .2rem;*/
+/*}*/
+/*.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {*/
+/*    color: #fff;*/
+/*    background-color: #5cb85c;*/
+/*    border-color: #5cb85c;*/
+/*}*/
+/*.bootstrap-switch .bootstrap-switch-handle-on {*/
+/*    border-bottom-left-radius: .25rem;*/
+/*    border-top-left-radius: .25rem;*/
+/*}*/
+/*.bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-handle-on {*/
+/*    text-align: center;*/
+/*    z-index: 1;*/
+/*}*/
+/*.bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-label {*/
+/*    box-sizing: border-box;*/
+/*    cursor: pointer;*/
+/*    display: inline-block!important;*/
+/*    height: 100%;*/
+/*    line-height: 1.25;*/
+/*    padding: .5rem 1rem;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 0;*/
+/*}*/
+/**, ::after, ::before {*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*.card .bootstrap-switch, .mc-promo-login .bootstrap-switch, .mc-promo-manage .bootstrap-switch {*/
+/*    word-wrap: initial;*/
+/*}*/
+/*.bootstrap-switch {*/
+/*    display: inline-block;*/
+/*    direction: ltr;*/
+/*    cursor: pointer;*/
+/*    border-radius: .25rem;*/
+/*    border: 1px solid;*/
+/*    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);*/
+/*    position: relative;*/
+    /* text-align: left; */
+/*    overflow: hidden;*/
+/*    line-height: 8px;*/
+/*    z-index: 0;*/
+/*    user-select: none;*/
+/*    vertical-align: middle;*/
+/*    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+/*}*/
+
+#order-standard_cart .prepend-icon .field-icon {
+	left: 0px;
+}
+
+
+/*.popover {*/
+/*    position: absolute;*/
+/*    will-change: transform;*/
+/*    top: 0px;*/
+/*    right: 0px!important;*/
+/*    transform: translate3d(-70px, 32px, 1px)!important;*/
+/*}*/
+
+
+.popover {
+    transform: translate3d(-20px, 32px, 0px)!important;
+}
+
+
+
+
+/*تجميع قديم */
+.primary-content .card-body {
+    /*direction: ltr;*/
+    padding: 20px;
+    overflow: inherit;
+}
+
+
+/* #product1-description > img{max-width:100%} */ 
+
+
+
+/*تجميع قديم */
+
+
+
+
+
+/*عشان رقم التلفون يضل يسار يمين*/
+
+
+.intl-tel-input {
+    text-align: left;
+    width: 100%;
+    direction: ltr;
+}
+
+.iti-mobile .intl-tel-input.iti-container {
+    right: 1px;
+}
+
+/*فقط لخط نوتو الجديد*/
+.form-control {
+
+    height: calc(1.5em + .75rem + 5px);
+
+}
+
+/*عشان السي بانيل من الداخل*/
+#cpanelalaa {
+    direction: ltr;
+}
+
+
+/*كرمال السهم بالبوب اب يصير عليمين بدل اليسار */
+.bs-tooltip-left .arrow {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+
+.product-configurable-options > .row > .col-sm-6 > .form-group > .form-control {
+    direction: ltr!important;
+}
+
+/*.alert-success {*/
+/*    text-align: right;*/
+/*}*/
+
+.footer_th3p {
+  direction: ltr;
+}
+
+/*اختيار الدومين */
+
+form#frmProductDomain {
+    direction: ltr;
+}
+
+#order-standard_cart label, #order-standard_cart p.domain-renewal-desc {
+    direction: rtl;
+    margin-left: 10px;
+}
+
+#order-standard_cart .domain-selection-options .option .iradio_square-blue {
+    margin-left: 10px;
+}
+
+#order-standard_cart .domain-selection-options .option .iradio_square-blue {
+    margin-right: 0px!important;
+}
+#order-standard_cart label, #order-standard_cart p.domain-renewal-desc {
+    margin-right: 0px!important;
+}
+
+.tooltip.show {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+/*البحث في صفحة تجديد الخدمات*/
+@media (min-width: 768px) {
+    body .form-control.service-renewals-filter {
+        float: left !important;
+    }
+}
+
+
+
+/*حل مشكلة الايقونات في صفحة البحث عن دومين*/
+.domain-promo-box i {
+    float: left!important;
+}
+
+
+/*حل مشكلة النطاقات المقترحة*/
+.suggested-domains .actions {
+    float: left!important;
+}
+
+/*فئة المنتج في صفحة المنتج*/
+#configoptions.text-center .text-left {
+    direction:ltr;
+}

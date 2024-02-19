@@ -1,0 +1,66 @@
+.invoice-container {
+    direction: rtl;
+    margin: 15px auto;
+    padding: 70px;
+    max-width: 850px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.card-title {
+    text-align: right;
+    margin-bottom: .75rem;
+}
+
+@media (min-width:500px) {
+	.invoice-col {
+	    text-align: right;
+		float: left;
+		width: 50%
+	}
+	.invoice-col.right {
+		float: right;
+		text-align: right
+	}
+}
+.table {
+    text-align: right;
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529
+}
+.h3, h3 {
+    clear: right;
+    text-align: right;
+    font-size: 1.75rem;
+}
+.invoice-container .invoice-header img {
+    float: right;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+
+/*صفحة مشاهدة الفاتورة اضافة من رصيد الحالي للفاتورة*/
+
+/*.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {*/
+/*    width: auto!important;*/
+
+/*}*/
+.btn-success {
+    background-color: #0a4c19!important;
+}
+
+
+ /*ازرار الطباعه داخل الفاتورة*/
+.float-right {
+    direction: ltr;
+}
+
+
+
+
+
+
+

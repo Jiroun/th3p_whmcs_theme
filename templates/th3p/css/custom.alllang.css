@@ -1,0 +1,548 @@
+#ala1 {
+    background: #d3e8ed;
+    border-radius: 5px;
+    border-right: 5px solid #ffc465;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: fit-content;
+}
+
+
+.express-checkout-buttons {
+    display: none !important;
+}
+
+/*تعليق بتاريخ 12/4/2021 */
+
+/*.fa, .fab, .fad, .fal, .far, .fas{*/
+/*    color: #19C1DD;*/
+/*}*/
+/*.fa-shopping-cart:before {*/
+/*    color: #ff9d00;*/
+/*    content: "\f07a";*/
+/*}*/
+
+
+/*.fa-store-alt:before {*/
+/*    color: #ffa008;*/
+/*    content: "\f54f";*/
+/*}*/
+/*.fa-user-circle:before {*/
+/*    color: #ffa008;*/
+/*    content: "\f2bd";*/
+/*}*/
+
+/*.fa-circle {*/
+/*    color: white;*/
+/*}*/
+
+/*.fa-arrow-circle-right:before {*/
+/*    color: #FF9D00;*/
+/*    content: "\f0a9";*/
+/*}*/
+
+/*.fa-arrow-right:before {*/
+/*    color: white;*/
+/*    content: "\f061";*/
+/*}*/
+
+
+/*تعليق بتاريخ 12/4/2021 */
+
+
+
+
+/*.fa-plus:before {*/
+/*    color: #222d65;*/
+/*}*/
+
+
+#order-standard_cart .order-summary .btn-continue-shopping {
+    color: #007c99!important;
+    font-size: 15px!important;
+}
+
+/*.btn.btn-default.bg-color-gold.btn-xs .fas.fa-plus*/
+/*{*/
+/*    color: white;*/
+/*}*/
+
+/*تعليق بتاريخ 12/4/2021 */
+
+/*اشارة الزائد في الرئيسية */
+/*.btn.btn-default.bg-color-gold.btn-xs .fas.fa-plus*/
+/*{color: white;}*/
+/*.btn.btn-default.bg-color-blue.btn-xs .fas.fa-plus*/
+/*{color: white;}*/
+/*تعليق بتاريخ 12/4/2021 */
+
+
+/*كمية الرصيد*/
+#inputConfigOption2{
+    width: auto;
+}
+
+
+/*ازرق*/
+/*19C1DD*/ 
+/*برتقالي*/
+/*ff9d00*/
+
+/*ظهور قائمة ارقام الهواف اعلى شيء*/
+.intl-tel-input .country-list {
+    z-index: 5;
+
+}
+
+
+/*لون الايقونات في الهيدر*/
+header.header .toolbar .nav-link {
+    color: #19c1dd;
+}
+header.header .toolbar .nav-link:hover {
+    color: #ff9d00;
+}
+
+
+
+.navbar-nav.mr-auto .d-block.no-collapse .pr-4 .fas
+{color: #19c1dd;}
+
+
+.navbar-nav.mr-auto .d-block.no-collapse .pr-4 .far
+{color: #19c1dd;}
+
+.navbar-nav.mr-auto .d-block .pr-4 .fas
+{color: #19c1dd;}
+
+
+.navbar-nav.mr-auto .d-block .pr-4 .far
+{color: #19c1dd;}
+
+/*.navbar-nav.mr-auto .d-block.dropdown.no-collapse .pr-4.dropdown-toggle .fas*/
+/*{color: #ff9d00;}*/
+
+.d-block .pr-4 .far
+{color: #19c1dd;}
+
+/*.d-block.dropdown.no-collapse .pr-4.dropdown-toggle .fas*/
+/*{color: #ff9d00;}*/
+
+
+/*.dropdown-toggle .fas*/
+/*{color: #ff9d00;}*/
+
+.fa-store-alt:before 
+{color: #ff9d00;}
+
+.fa-user-circle:before 
+{color: #ff9d00;}
+
+.dropdown-menu.show .dropdown-item .fas
+{color: #19c1dd;}
+
+.dropdown-menu.show .dropdown-item .far
+{color: #19c1dd;}
+
+.dropdown-menu.show .dropdown-item .fad
+{color: #19c1dd;}
+.dropdown-menu.show .dropdown-item .fab
+{color: #19c1dd;}
+
+.list-group-item.list-group-item-action.active .fas,.list-group-item.list-group-item-action.active .fad,.list-group-item.list-group-item-action.active .far,.list-group-item.list-group-item-action.active .fab
+{color: #ff9d00;}
+
+.list-group-item.list-group-item-action .fas,.list-group-item.list-group-item-action .fad,.list-group-item.list-group-item-action .far,.list-group-item.list-group-item-action .fab
+{color: #19C1DD;}
+
+.fa-archive:before {
+    color: #19c1dd;
+}
+
+
+/*.btn.btn-default.bg-color-blue.btn-xs .fas.fa-plus*/
+/*{color: white;}*/
+
+
+/*حل مشكلة زر الطلب */
+#order-standard_cart .products .product div.product-desc {
+    width: 60%;
+}
+
+
+/*حل مشكلة الصور */
+[id$="-description"] > img{max-width:100%} 
+/*[id$="-description"] > img {*/
+/*    border-radius: 40px;*/
+/*    overflow: hidden;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*اخفاء SSL */
+
+
+#tableDomainsList [data-type="domain"],
+#tableDomainsList .sorting_disabled:nth-child(2)
+{display: none;}
+
+
+
+.product-status-completed {
+    background-color: #46a546;
+}
+
+
+.copyright_line {
+    text-align: center;
+    line-height: 25px;
+    padding: 14px 0;
+    color: #4f4f4f;
+    font-weight: 400;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0px 0 25px 0 rgba(200, 219, 239, 0.2);
+}
+
+
+
+/* تكبير خط المربع جنب الخدمات */
+
+.badge {
+    font-size: 105%!important;
+}
+
+/* زيادة المساحة لاول عامود في استعراض الخدمات */
+
+#tableServicesList th:nth-child(2), #tableServicesList td:nth-child(2) {
+    width: 92px;
+}
+
+
+.div-service-status .label {
+    text-overflow: inherit!important;
+}
+
+.label {
+    font-size: 105%!important;
+}
+
+
+
+
+
+/* --- CSS Improvements by ChatGPT --- */
+.tile,  .card, .modal-content, .alert, .tooltip, .popover {
+    border-radius: 10px;
+    
+}
+
+
+.tile, .modal-content, .dropdown-menu, .tooltip, .popover  {
+    overflow: hidden;
+}
+
+.tile,  .card, .modal-content, .dropdown-menu, .tooltip, .popover  {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*حل مشكلة الزاوية المستديرة يظهر خلفها لون اخر*/
+.card-header {
+    background-color: rgb(255 255 255 / 0%)!important;
+}
+
+.card-footer {
+    background-color: rgb(255 255 255 / 0%)!important;
+}
+
+
+
+.badge  {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08)!important;
+}
+
+
+.card:hover, .modal-content:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+
+
+.col-6.col-xl-3 .tile {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .col-6.col-xl-3 .tile {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+
+
+.product {
+    border-radius: 8px!important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#order-standard_cart .order-summary {
+    border-radius: 10px!important;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*اخفاء فيو مور تحت الخدمات*/
+div[menuitemname="Active Products/Services"] .btn-view-more.disabled {
+    display: none;
+}
+
+
+
+
+/* Button & Icon Enhancements */
+/*.btn {*/
+/*    transition: all 0.3s;*/
+/*    border-radius: 5px;*/
+/*    will-change: transform, opacity;*/
+/*}*/
+
+
+
+.btn:hover {
+    transition: all 0.005s;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navbar a, .navbar .nav-link, .navbar .btn {
+    color: #e1e1e1;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+
+
+/* Shadows & Depth */
+/*.navbar-light  {*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+header.header .main-navbar-wrapper {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/*جيد ايضا*/
+/*.navbar {*/
+/*    background: linear-gradient(to right, #e0f0ff, #f0f8ff);*/
+/*    color: #333;*/
+/*}*/
+
+/*header.header .main-navbar-wrapper {*/
+/*    background: linear-gradient(to right, #66B2CC, #33D4FF, #66E0E0);*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    color: #fff;*/
+/*}*/
+
+
+/*// هذا فاتح جميل*/
+/*.navbar {*/
+/*    background: linear-gradient(to right, #f0faff, #f8fcff, #e0f4ff);*/
+/*    color: #333;*/
+/*}*/
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fcfeff;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+/*.navbar {*/
+/*    background: linear-gradient(90deg, #C0E6ED 0%, #D4E9F0 100%);*/
+/*    color: #333;*/
+/*    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);*/
+/*}*/
+
+/*.navbar a, .navbar .nav-link, .navbar .btn {*/
+/*    color: #333;*/
+/*    transition: color 0.2s;*/
+/*}*/
+
+/*.navbar a:hover, .navbar .nav-link:hover {*/
+/*    color: rgba(0, 0, 0, 0.7);*/
+/*}*/
+
+
+
+
+
+/* --- CSS Improvements by ChatGPT --- */
+
+/* تحسينات على العناوين */
+/*h2.text-center {*/
+/*    border-bottom: 2px solid #e6e6e6;*/
+/*    padding-bottom: 1rem;*/
+/*    margin-top: 2rem;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/* تحسينات على البطاقات */
+.card-columns.home .card {
+    /*transition: all 0.2s ease; */
+    border: none;
+}
+
+.card-columns.home .card .card-title {
+    color: #1f1eaa; /* لون العنوان */
+    margin-bottom: 1rem; /* التباعد */
+}
+
+.card-columns.home .card .card-body {
+    padding: 2rem!important;
+}
+/* تأثير تكبير عند التمرير فوق البطاقة */
+.card-columns.home .card:hover {
+    transform: scale(1.02); 
+}
+
+/* تحسينات على الأزرار في الصفحة الرئيسية فقط */
+.card-columns.home .card a.btn {
+    border: none;
+    background-color: #2C3E50; 
+    color: #fff; 
+    margin-top: 1.5rem;
+    /*transform:none;*/
+    /*padding: 0.75rem 1.5rem;*/
+    /*transition: all 0.3s ease;*/
+}
+
+.card-columns.home .card a.btn:hover {
+    background-color: #34495E;
+}
+
+/* تحسينات على الأيقونات */
+/* تحسينات على الأقسام */
+
+/*.ico-container {*/
+/*    margin-bottom: 1rem; */
+/*    font-size: 2.5rem;*/
+/*}*/
+
+/*.action-icon-btns a {*/
+/*    display: block; */
+/*    padding: 1.5rem 0; */
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+.action-icon-btns a:hover {
+    background-color: #f8f8f8; 
+}
+
+
+/*ترتيب الاقسام افقي*/
+@media (min-width: 992px) {
+    .card-columns.home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-columns.home .card {
+        width: calc(33.33% - 15px);
+        margin-bottom: 25px!important;
+    }
+}
+
+
+
+/*اليرت تحسين شكل*/
+.alert-success {
+    border-radius: 10px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.alert-info {
+    border-radius: 10px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.alert-warning {
+    border-radius: 10px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+
+/* القائمة في الفوتر */
+footer .nav-link {
+    border-radius: 5px;
+}
+
+
+
+footer .nav-link:hover {
+    background-color: #1c2732;
+}
+
+
+
+/*جداول المنتجات وغيرها*/
+.dataTables_wrapper table.table-list {
+    overflow: hidden;
+    border-radius: 10px!important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+/*حل مشكلة الفوتر عند المرور فوق الايقونات*/
+.action-icon-btns a .ico-container {
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+.action-icon-btns a:hover .ico-container {
+    font-size: 2.6em !important;
+    transform: scale(1.20);
+}
+
+/*محاذاه ايقونات الفوتر*/
+.mb-1 {
+    margin-bottom: initial!important;
+}
+
+
+
+#header .topbar .btn {transform: none!important;}
+
+
+footer.footer .btn-icon {
+    margin-inline: 1px;
+}
+
+/*اصلاح الدروب داون لاختيار سنوات الدومين*/
+.dropdown-menu {
+    min-width: fit-content;
+}
+
+
+/* اصلاح خيال زر جوجل */
+.btn-social:hover {box-shadow: none; }
+
+
