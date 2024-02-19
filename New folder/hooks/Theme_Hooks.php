@@ -10,61 +10,39 @@ use WHMCS\Database\Capsule;
 // عنوان ووصف ورابط اساسي
 // التايتل يبقى تعديله من ملف الهيدر في الثيم
 add_hook('ClientAreaPage', 1, function($vars) {
-   
-   
-       
-    GLOBAL $smarty;
-    
-    $templatefile = $smarty->getVariable('templatefile');
+    $systemUrl = Capsule::table('tblconfiguration')->where('setting', 'SystemURL')->value('value');
     $language = $vars['activeLocale']['locale'];
     
-    if ($templatefile == "homepage")
-    {
-    if ($language == "ar_AR" )
-    {
+    add_hook('ClientAreaHeadOutput', 1, function($vars) use ($systemUrl, $language) {
+        $canonicalUrl = $systemUrl;
+        if ($language == "en_GB") {
+            $canonicalUrl .= "?language=english";
+        }
 
-        add_hook('ClientAreaHeadOutput', 1, function($vars) {
-            
+        // تحديد المحتوى بناءً على اللغة
+        if ($language == "ar_AR") {
             $title = "المزود | مزود خدمة الإستضافة - سيرفرات - خدمات برمجية وغيرها";
-            
-    return <<<HTML
-    <link rel="canonical" href="https://th3p.com" />
-    <meta name="description" content="موقع المزود TH3Provider - أفضل مزود لخدمات الاستضافة - حجز نطاقات - سيرفرات لينكس - سيرفرات ويندوز والخدمات البرمجية وغيرها">
-    <meta name="keywords" content="الاستضافة المشتركة,استضافة المزود,المزود,حجز نطاقات,th3p,Provider,TH3Provider,سيرفرات لينكس,سيرفرات ويندوز,شحن أرصدة الجوالات,بطاقات الألعاب,منتجات مايكروسوفت,خدمات الفي بي ان,شدات ببجي موبايل,مزود,خدمات برمجية">
-    <meta property="og:description" content="موقع المزود TH3Provider - أفضل مزود لخدمات الاستضافة - حجز نطاقات - سيرفرات لينكس - سيرفرات ويندوز والخدمات البرمجية وغيرها">
-    <meta name="twitter:description" content="موقع المزود TH3Provider - أفضل مزود لخدمات الاستضافة - حجز نطاقات - سيرفرات لينكس - سيرفرات ويندوز والخدمات البرمجية وغيرها">
-    <meta name="twitter:title" content="{$title}"/>
-    <meta property="og:title" content="{$title}">
+            $metaDescription = "موقع المزود TH3Provider - أفضل مزود لخدمات الاستضافة - حجز نطاقات - سيرفرات لينكس - سيرفرات ويندوز والخدمات البرمجية وغيرها";
+            $keywords = "الاستضافة المشتركة,استضافة المزود,المزود,حجز نطاقات,th3p,Provider,TH3Provider,سيرفرات لينكس,سيرفرات ويندوز,شحن أرصدة الجوالات,بطاقات الألعاب,منتجات مايكروسوفت,خدمات الفي بي ان,شدات ببجي موبايل,مزود,خدمات برمجية";
+        } else {
+            $title = "TH3Provider | Hosting, VPS, Dedicated Server, and more services";
+            $metaDescription = "TH3P (TH3Provider) The Best Provider for Buy Domain - cPanel Hosting - Windows Servers - Linux Dedicated Servers - Linux VPS Servers - Games Gift Cards - iTunes & Google Play Cards - Shopping Gift Cards, Programming Services and more";
+            $keywords = "TH3Provider,Domains,cPanel Hosting,Shopping Cards,Google Play Cards,iTunes Cards, Linux VPS Servers,Windows Servers,Game Gift Cards,Windows Servers,Mobile Recharge,Programming Services";
+        }
+
+        // العودة بالمحتوى المطلوب
+        return <<<HTML
+        <link rel="canonical" href="{$canonicalUrl}" />
+        <meta name="description" content="{$metaDescription}">
+        <meta name="keywords" content="{$keywords}">
+        <meta property="og:description" content="{$metaDescription}">
+        <meta name="twitter:description" content="{$metaDescription}">
+        <meta name="twitter:title" content="{$title}"/>
+        <meta property="og:title" content="{$title}">
 HTML;
+    });
 });
 
-
-
-    }
-    
-    if ($language == "en_GB")
-    {
-        
-        add_hook('ClientAreaHeadOutput', 1, function($vars) {
-            
-             $title = "TH3Provider | Hosting, VPS, Dedicated Server, and more services";
-             
-    return <<<HTML
-    <link rel="canonical" href="https://th3p.com/?language=english" />
-    <meta name="description" content="TH3P (TH3Provider) The Best Provider for Buy Domain - cPanel Hosting - Windows Servers - Linux Dedicated Servers - Linux VPS Servers - Games Gift Cards - iTunes & Google Play Cards - Shopping Gift Cards, Programming Services and more">
-    <meta name="keywords" content="TH3Provider,Domains,cPanel Hosting,Shopping Cards,Google Play Cards,iTunes Cards, Liniux VPS Servers,Windows Servers,Game Gift Cards,Windows Servers,Mobile Recharge,Programming Services">
-    <meta property="og:description" content="TH3P (TH3Provider) The Best Provider for Buy Domain - cPanel Hosting - Windows Servers - Linux Dedicated Servers - Linux VPS Servers - Games Gift Cards - iTunes & Google Play Cards - Shopping Gift Cards, Programming Services and more">
-    <meta name="twitter:description" content="TH3P (TH3Provider) The Best Provider for Buy Domain - cPanel Hosting - Windows Servers - Linux Dedicated Servers - Linux VPS Servers - Games Gift Cards - iTunes & Google Play Cards - Shopping Gift Cards, Programming Servicess and more">
-    <meta name="twitter:title" content="{$title}"/>
-    <meta property="og:title" content="{$title}">
-HTML;
-});
-    }
-    
-    
-    } // end of (if homepage)
-   
-});
 
 
 // زر تبديل اللغة
