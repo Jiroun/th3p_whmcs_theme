@@ -10,11 +10,11 @@
     <link href="{assetPath file='theme.min.css'}?v={$versionHash}" rel="stylesheet">
     <link href="{$WEB_ROOT}/assets/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="{assetPath file='invoice.min.css'}?v={$versionHash}" rel="stylesheet">
-     {if {lang key='languagePDF'} eq 'arabic'} 
-{assetExists file="custom-invoice-rtl.css"}
-<link href="{$__assetPath__}" rel="stylesheet">
-{/assetExists}
-{/if}
+    {if {lang key='locale'} eq 'ar_AR'} 
+        {assetExists file="custom-invoice-rtl.css"}
+        <link href="{$__assetPath__}" rel="stylesheet">
+        {/assetExists}
+        {/if}
     <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
 
 </head>
