@@ -114,7 +114,7 @@
             </a>	
         </div>	
     {/if}	
-    <div class="col-6 col-md-4 offset-md-2 offset-lg-0 col-lg">	
+    <div class="col-6 col-md-4 col-lg">	
         <a href="supporttickets.php" class="card-accent-midnight-blue">	
             <figure class="ico-container">	
                 <i class="fal fa-comments"></i>	
@@ -122,7 +122,7 @@
             {lang key='homepage.supportRequests'}	
         </a>	
     </div>	
-    <div class="col-6 offset-3 offset-md-0 col-md-4 col-lg">	
+    <div class="col-6 col-md-4 col-lg">	
         <a href="clientarea.php?action=masspay&all=true" class="card-accent-midnight-blue">	
             <figure class="ico-container">	
                 <i class="fal fa-credit-card"></i>	
