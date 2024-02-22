@@ -4,6 +4,13 @@
 
 use WHMCS\Database\Capsule;
 
+if (!function_exists('getsitename')) {
+    function getsitename($vars){
+        $language = $vars['activeLocale']['locale'];
+        if ($language == "ar_AR" ) return "العربي";
+        else return "الإنجليزي";
+    }
+}
 
 
 // الصفحة الرئيسية
