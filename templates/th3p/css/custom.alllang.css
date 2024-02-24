@@ -546,3 +546,10 @@ footer.footer .btn-icon {
 .btn-social:hover {box-shadow: none; }
 
 
+
+/* اصلاح اسماء التذاكر*/
+.truncate {
+    direction: ltr;
+    white-space: normal; 
+
+}
