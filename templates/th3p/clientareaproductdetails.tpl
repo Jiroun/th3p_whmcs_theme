@@ -524,7 +524,6 @@
                 <form class="using-password-strength" method="post" action="{$smarty.server.PHP_SELF}?action=productdetails#tabChangepw" role="form">
                     <input type="hidden" name="id" value="{$id}" />
                     <input type="hidden" name="modulechangepassword" value="true" />
-
                     <div id="newPassword1" class="form-group row has-feedback">
                         <label for="inputNewPassword1" class="col-xl-4 col-form-label">{lang key='newpassword'}</label>
                         <div class="col-xl-5">
